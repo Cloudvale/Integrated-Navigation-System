@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lzc 1925829407@qq.com, lzc, LIC=X1E4T-RDHF2-E0MN4-FVFJX-AHNEI-4385I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.34.0.0
+Toolchain Path:  D:\software\keil5\core\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\Desktop\DMA_test - COM3 - SD\DMA_test - COM3 - SD\MDK-ARM\DMA_test.uvprojx
+Project File Date:  01/05/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\software\keil5\core\ARM\ARMCLANG\Bin'
+Build target 'DMA_test'
+Note: source file '..\USER\src\lwip\src\core\sys.c' - object file renamed from 'DMA_test\sys.o' to 'DMA_test\sys_1.o'.
+compiling gtim.c...
+compiling btim.c...
+compiling sd_data.c...
+compiling lwip_demo.c...
+../Core/Src/freertos.c(353): warning: illegal character encoding in string literal [-Winvalid-source-encoding]
+                lcd_show_string(30, 150, 300, 32, 32, "MCU to PHY failed<A3><A1><A3><A1><A3><A1><A3><A1>", BLUE);           /* MCU<D3><EB>PHYоƬͨ<D0><C5>ʧ<B0>ܣ<AC><C7><EB><BC><EC><B2><E9><B5><E7>·<BB><F2><D5><DF>Դ<C2>룡<A3><A1><A3><A1><A3><A1> */
+                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/freertos.c(548): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+                                        navimain(g_output_info.angle_rate.x, -g_output_info.angle_rate.z, g_output_info.angle_rate.y, g_output_info.accel.x, -g_output_info.accel.z, g_output_info.accel.y, lat, lon, elv, &gnss_btim_flag);
+                                                                                                                                                                                                                           ^~~~~~~~~~~~~~~
+../USER/src/INS\navimain.h(33): note: passing argument to parameter 'DataRevision' here
+void navimain(double gyro_x_data, double gyro_y_data, double gyro_z_data, double accel_x_data, double accel_y_data, double accel_z_data, double Lat, double Long, double elv, uint8_t* DataRevision);
+                                                                                                                                                                                       ^
+2 warnings generated.
+compiling freertos.c...
+linking...
+Program Size: Code=192240 RO-data=198040 RW-data=320 ZI-data=130576  
+FromELF: creating hex file...
+"DMA_test\DMA_test.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_DMA_test
+  D:\software\keil5\pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\software\keil5\pack\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
